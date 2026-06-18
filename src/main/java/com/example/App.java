@@ -1,7 +1,7 @@
 package com.example;
 import org.apache.commons.io.FileUtils;
 import java.io.File;
-import java.io.IOException
+import java.io.IOException;
 import com.google.common.collect.ImmutableList;
 
 /**
@@ -12,15 +12,15 @@ public class App
 {
     public static void main( String[] args )
     {
-    	ImmutableList<String> list = new ImmutableList.of("Cherry","Banana","Apple");
+    	ImmutableList<String> list = ImmutableList.of("Cherry","Banana","Apple");
         System.out.println(list);
         
-        File sourcefile = new File('source.txt');
-        File destfile = new File('destination.txt');
+        File sourceFile = new File("source.txt");
+        File destFile = new File("destination.txt");
         
         try{
         
-        FileUtils.copyFile(sourcefile,destfile);
+        FileUtils.copyFile(sourceFile,destFile);
         System.out.println("File copied successfully");
         
         }
